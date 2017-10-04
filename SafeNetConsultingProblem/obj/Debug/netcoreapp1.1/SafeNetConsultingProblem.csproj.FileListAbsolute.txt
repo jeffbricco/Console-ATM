@@ -1,0 +1,9 @@
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/bin/Debug/netcoreapp1.1/SafeNetConsultingProblem.deps.json
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/bin/Debug/netcoreapp1.1/SafeNetConsultingProblem.runtimeconfig.json
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/bin/Debug/netcoreapp1.1/SafeNetConsultingProblem.runtimeconfig.dev.json
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/obj/Debug/netcoreapp1.1/SafeNetConsultingProblem.csproj.CoreCompileInputs.cache
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/obj/Debug/netcoreapp1.1/SafeNetConsultingProblem.AssemblyInfo.cs
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/bin/Debug/netcoreapp1.1/SafeNetConsultingProblem.dll
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/bin/Debug/netcoreapp1.1/SafeNetConsultingProblem.pdb
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/obj/Debug/netcoreapp1.1/SafeNetConsultingProblem.dll
+/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/obj/Debug/netcoreapp1.1/SafeNetConsultingProblem.pdb

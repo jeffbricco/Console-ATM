@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{F345CB3E-59DE-446A-AF2D-F3AF6A111C57}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SafeNetConsultingProblem/Program.cs">
+    <Files>
+      <File FileName="SafeNetConsultingProblem/Program.cs" Line="66" Column="33" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SafeNetConsultingProblem PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
