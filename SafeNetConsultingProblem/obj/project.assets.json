@@ -14501,10 +14501,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/SafeNetConsultingProblem.csproj",
+      "projectUniqueName": "/Users/jeffbricco/projects/SafeNetConsultingProblem/Console-ATM/SafeNetConsultingProblem/SafeNetConsultingProblem.csproj",
       "projectName": "SafeNetConsultingProblem",
-      "projectPath": "/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/SafeNetConsultingProblem.csproj",
-      "outputPath": "/Users/jeffbricco/projects/SafeNetConsultingProblem/SafeNetConsultingProblem/obj",
+      "projectPath": "/Users/jeffbricco/projects/SafeNetConsultingProblem/Console-ATM/SafeNetConsultingProblem/SafeNetConsultingProblem.csproj",
+      "outputPath": "/Users/jeffbricco/projects/SafeNetConsultingProblem/Console-ATM/SafeNetConsultingProblem/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

@@ -23,7 +23,7 @@ namespace SafeNetConsultingProblem
                         string parsedInput = new string(input.Where(p => char.IsDigit(p)).ToArray());
                         if (parsedInput.Length > 0)
                         {
-							Helpers.Withdraw(Convert.ToInt32(parsedInput));
+							Helpers.WithdrawStart(Convert.ToInt32(parsedInput));
                         }
                     }
                     else if (input.Substring(0, 1) == "I")
@@ -54,8 +54,7 @@ namespace SafeNetConsultingProblem
 			{100, 10},
 			{50, 10},
 			{20, 10},
-			{10, 10},
-			{5, 10},
+
 			{1, 10}
 		};
 
@@ -94,29 +93,40 @@ namespace SafeNetConsultingProblem
 			}
 		}
 
-		public static void Withdraw(int Amount)
+        public static void WithdrawStart(int Amount)
+        {
+			tempDenomonations = new Dictionary<int, int>(dictDenomonations);   
+            Withdraw(Amount, tempDenomonations);
+        }
+
+		public static void Withdraw(int Amount, Dictionary<int,int> tempDenomonations)
 		{
+            if (tempDenomonations.Count() == 0 )
+            {
+				Console.WriteLine("Failure: insufficient funds");
+				tempDenomonations = dictDenomonations;
+				return;
+            }
             int remainingAmount = Amount;
-            tempDenomonations = new Dictionary<int, int>(dictDenomonations);
-			foreach (var key in dictDenomonations.Keys.OrderByDescending(key => key).ToList())
+			foreach (var key in tempDenomonations.Keys.OrderByDescending(key => key).ToList())
 			{
                 remainingAmount = ReturnQuantity(key, remainingAmount);
                 if (remainingAmount == 0)
                 {
                     Console.WriteLine("Success: Dispensed $" + Amount);
                     Console.WriteLine("Machine balance: ");
-                    foreach (var item in tempDenomonations.Keys)
+                    foreach (var item in dictDenomonations.Keys.ToList())
                     {
-                        Console.WriteLine("$" + item + " - " + tempDenomonations[item]);    
+                        if (tempDenomonations.ContainsKey(item))
+							dictDenomonations[item] = tempDenomonations[item];
+						Console.WriteLine("$" + item + " - " + dictDenomonations[item]);
                     }
-                    dictDenomonations = tempDenomonations;
                     return;
                 }
 				else if (key == 1)
                 {
-                    Console.WriteLine("Failure: insufficient funds");
-                    tempDenomonations = dictDenomonations;
-                    return;
+                    tempDenomonations.Remove(tempDenomonations.Keys.Max());
+                    Withdraw(Amount, tempDenomonations);
                 }
 			}
 		}
