@@ -54,7 +54,8 @@ namespace SafeNetConsultingProblem
 			{100, 10},
 			{50, 10},
 			{20, 10},
-
+            {10, 10},
+            {5, 10},
 			{1, 10}
 		};
 
